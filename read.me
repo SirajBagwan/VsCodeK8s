@@ -27,8 +27,8 @@
 6. Pre-req to manage alb via eks
         curl -O https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.5.4/docs/install/iam_policy.json
         aws iam create-policy --policy-name AWSLoadBalancerControllerIAMPolicy --policy-document file://iam_policy.json
-        eksctl utils associate-iam-oidc-provider --region=ap-south-1 --try --approve
-        eksctl create iamserviceaccount --cluster=try --namespace=kube-system --name=aws-load-balancer-controller --role-name AmazonEKSLoadBalancerControllerRole --attach-policy-arn=arn:aws:iam::<awsAccountId>:policy/AWSLoadBalancerControllerIAMPolicy --approve --region=ap-south-1
+        eksctl utils associate-iam-oidc-provider --region=ap-south-1 --cluster try --approve
+        eksctl create iamserviceaccount --cluster=try --namespace=kube-system --name=aws-load-balancer-controller --role-name AmazonEKSLoadBalancerControllerRole --attach-policy-arn=arn:aws:iam::898364898119:policy/AWSLoadBalancerControllerIAMPolicy --approve --region=ap-south-1
 
 7. Installing helm to deploy loadbalancer controller in eks
         sudo snap install helm --classic
