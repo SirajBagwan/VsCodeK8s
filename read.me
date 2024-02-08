@@ -13,10 +13,12 @@
         kubectl version
 
 4. Download Eksctl
-        curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+        curl --silent --location "" | tar xz -C /tmp
         sudo mv /tmp/eksctl /usr/local/bin
         eksctl version
-
+        https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz
+        # eksctl create cluster --name try --region ap-south-1 --node-type t3.large --nodes-min 2 --nodes-max 3
+        
 5. Create eks cluster
     
      1. In This all the resources will be manages by eks itself from deploying to destroying all the the opeartions will handle by eks 

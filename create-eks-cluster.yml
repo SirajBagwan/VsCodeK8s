@@ -1,0 +1,18 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: try
+  region: ap-south-1
+
+nodeGroups:
+  - name: ng-1
+    instanceType: t3.large
+    desiredCapacity: 2
+    minSize: 1  # Minimum number of instances in this node group
+    maxSize: 3 # Maximum number of instances in this node group
+  - name: ng-2
+    instanceType: t3.large
+    desiredCapacity: 2
+    minSize: 1  # Minimum number of instances in this node group
+    maxSize: 2  # Maximum number of instances in this node group

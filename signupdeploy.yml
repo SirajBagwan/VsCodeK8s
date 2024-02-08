@@ -23,8 +23,6 @@ spec:
         role: signup
     
     spec:
-      nodeSelector:
-        type: ng1
       containers:
       - name: poc-dock-nginx
         image: sirajbagwan/signup:latest
