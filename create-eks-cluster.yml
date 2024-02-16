@@ -9,10 +9,8 @@ nodeGroups:
   - name: ng-1
     instanceType: t3.large
     desiredCapacity: 2
-    minSize: 1  # Minimum number of instances in this node group
-    maxSize: 3 # Maximum number of instances in this node group
+    
   - name: ng-2
     instanceType: t3.large
     desiredCapacity: 2
-    minSize: 1  # Minimum number of instances in this node group
-    maxSize: 2  # Maximum number of instances in this node group
+   
